@@ -1,93 +1,135 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>รับทำเว็บไซต์.</title>
+<meta charset="UTF-8">
+<title>jaoprod | Dark Web Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #eef3f8, #f9fbfd);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    .card {
-      background: #ffffff;
-      width: 90%;
-      max-width: 400px;
-      border-radius: 20px;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    h1 {
-      margin-top: 0;
-      font-size: 26px;
-    }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(160deg, #050505, #0d0d0d);
+  color: #f1f1f1;
+}
 
-    p {
-      color: #555;
-      line-height: 1.6;
-      margin: 8px 0;
-    }
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
 
-    .price {
-      color: #1a73e8;
-      font-size: 22px;
-      font-weight: bold;
-      margin: 18px 0;
-    }
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(180deg, #0e0e0e, #151515);
+  border-radius: 28px;
+  padding: 42px 28px;
+  text-align: center;
+  box-shadow: 
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 40px 120px rgba(0,0,0,0.8);
+}
 
-    .line-btn {
-      display: inline-block;
-      background: #06c755;
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 24px;
-      border-radius: 12px;
-      font-size: 18px;
-      margin-top: 10px;
-      box-shadow: 0 6px 15px rgba(6,199,85,0.4);
-    }
+.brand {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
 
-    .line-btn:hover {
-      opacity: 0.9;
-    }
+.brand span {
+  color: #777;
+  font-weight: 300;
+}
 
-    .footer {
-      margin-top: 18px;
-      font-size: 13px;
-      color: #999;
-    }
-  </style>
+.sub {
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 2px;
+  margin-top: 6px;
+  margin-bottom: 28px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #cfcfcf;
+}
+
+.price {
+  margin: 26px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.line-btn {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #1aff64, #00c853);
+  color: #000;
+  text-decoration: none;
+  border-radius: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  box-shadow: 0 15px 40px rgba(0,255,120,.45);
+  transition: transform .2s ease;
+}
+
+.line-btn:active {
+  transform: scale(0.97);
+}
+
+.footer {
+  margin-top: 26px;
+  font-size: 11px;
+  color: #666;
+  letter-spacing: 1px;
+}
+</style>
 </head>
 
 <body>
-
+<div class="container">
   <div class="card">
-    <h1>รับทำเว็บไซต์</h1>
 
-    <p>ทำเว็บจากมือถือ iPhone</p>
-    <p>เหมาะสำหรับร้านค้า / แม่ค้าออนไลน์</p>
-    <p>เว็บสวย โหลดไว ใช้งานง่าย</p>
+    <div class="brand">jao<span>prod</span></div>
+    <div class="sub">DARK WEB STUDIO</div>
 
-    <div class="price">ราคาเริ่มต้น 1,500 บาท</div>
+    <div class="title">รับทำเว็บไซต์</div>
 
-    <!-- 🔴 เปลี่ยน YOUR_LINE_ID เป็นไอดีไลน์จริง -->
-    <a class="line-btn" href="https://line.me/ti/p/~mosnohp" target="_blank">
-      📱 ติดต่อทาง LINE
+    <div class="text">
+      สร้างเว็บไซต์จากมือถือ iPhone<br>
+      สำหรับร้านค้า & แบรนด์ออนไลน์<br>
+      ดีไซน์ดาร์กเท่ โหลดไว ใช้งานง่าย
+    </div>
+
+    <div class="price">เริ่มต้น 1,500 บาท</div>
+
+    <a class="line-btn" href="https://line.me/ti/p/mosnohp">
+      ติดต่อผ่าน LINE
     </a>
 
     <div class="footer">
-      เว็บไซต์นี้สร้างจาก iPhone
+      © jaoprod • Crafted on iPhone
     </div>
-  </div>
 
+  </div>
+</div>
 </body>
 </html>
