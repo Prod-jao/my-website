@@ -2,134 +2,131 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>jaoprod | Dark Web Studio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>jaoprod • Digital Studio</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(160deg, #050505, #0d0d0d);
-  color: #f1f1f1;
-}
-
-.container {
-  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #000 60%);
+  color: #eaeaea;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
 }
 
 .card {
-  width: 100%;
-  max-width: 420px;
-  background: linear-gradient(180deg, #0e0e0e, #151515);
-  border-radius: 28px;
-  padding: 42px 28px;
+  width: 90%;
+  max-width: 360px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 24px;
+  padding: 36px 28px;
   text-align: center;
-  box-shadow: 
-    0 0 0 1px rgba(255,255,255,0.04),
-    0 40px 120px rgba(0,0,0,0.8);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.8);
+  animation: float 6s ease-in-out infinite;
 }
 
-.brand {
-  font-size: 40px;
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.logo {
+  font-size: 36px;
+  letter-spacing: 2px;
   font-weight: 600;
-  letter-spacing: 3px;
 }
 
-.brand span {
+.logo span {
   color: #777;
   font-weight: 300;
 }
 
-.sub {
+.subtitle {
   font-size: 12px;
+  letter-spacing: 4px;
   color: #888;
-  letter-spacing: 2px;
   margin-top: 6px;
-  margin-bottom: 28px;
 }
 
-.title {
+.line {
+  width: 60px;
+  height: 2px;
+  margin: 20px auto;
+  background: linear-gradient(90deg, transparent, #00ff99, transparent);
+}
+
+h2 {
   font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
-.text {
+.desc {
   font-size: 14px;
-  line-height: 1.9;
-  color: #cfcfcf;
+  line-height: 1.8;
+  color: #bbb;
 }
 
 .price {
-  margin: 26px 0;
-  font-size: 24px;
+  margin: 28px 0;
+  font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
 }
 
-.line-btn {
+.btn {
   display: block;
-  width: 100%;
-  padding: 18px;
-  background: linear-gradient(135deg, #1aff64, #00c853);
-  color: #000;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 14px;
   text-decoration: none;
-  border-radius: 16px;
-  font-size: 17px;
+  color: #000;
   font-weight: 600;
-  box-shadow: 0 15px 40px rgba(0,255,120,.45);
-  transition: transform .2s ease;
+  background: linear-gradient(135deg, #00ff99, #00cc66);
+  box-shadow: 0 0 25px rgba(0,255,153,0.7);
+  transition: 0.3s;
 }
 
-.line-btn:active {
-  transform: scale(0.97);
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0,255,153,1);
 }
 
 .footer {
-  margin-top: 26px;
+  margin-top: 28px;
   font-size: 11px;
   color: #666;
-  letter-spacing: 1px;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
-  <div class="card">
 
-    <div class="brand">jao<span>prod</span></div>
-    <div class="sub">DIGITAL STUDIO</div>
+<div class="card">
+  <div class="logo">jao<span>prod</span></div>
+  <div class="subtitle">DIGITAL STUDIO</div>
+  <div class="line"></div>
 
-    <div class="title">รับทำเว็บไซต์</div>
+  <h2>รับออกแบบและพัฒนาเว็บไซต์</h2>
 
-    <div class="text">
-      ให้บริการออกแบบและพัฒนาเว็บไซต์<br>
-      สำหรับร้านค้า & แบรนด์ออนไลน์<br>
-      โครงสร้างดี โหลดเร็ว รองรับทุกอุปกรณ์
-    </div>
+  <p class="desc">
+    สำหรับธุรกิจออนไลน์ แบรนด์ และร้านค้า<br>
+    โครงสร้างมืออาชีพ โหลดเร็ว รองรับทุกอุปกรณ์
+  </p>
 
-    <div class="price">เริ่มต้น 1,500 บาท</div>
+  <div class="price">แพ็คเก็จเริ่มต้น 1,500 บาท</div>
 
-    <a class="line-btn" href="https://line.me/ti/p/mosnohp">
-      ติดต่อผ่าน LINE
-    </a>
+  <a class="btn" href="https://line.me/ti/p/mosnohp">
+    ปรึกษาฟรีทาง Line
+  </a>
 
-    <div class="footer">
-      © jaoprod • Crafted on iPhone
-    </div>
-
-  </div>
+  <div class="footer">© jaoprod • Digital Studio</div>
 </div>
+
 </body>
 </html>
