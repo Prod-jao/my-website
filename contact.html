@@ -3,24 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact • jaoprod</title>
+<title>ติดต่อ | jaoprod</title>
+
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont;
+  background:#050505;
+  color:#fff;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
+}
+nav a{
+  color:#aaa;
+  text-decoration:none;
+}
+nav a:hover{color:#00ff88;}
+
+.container{
+  max-width:380px;
+  margin:60px auto;
+  padding:30px;
+  background:#0f0f0f;
+  border-radius:22px;
+  box-shadow:0 20px 50px rgba(0,0,0,.8);
+  text-align:center;
+}
+
+h1{margin-bottom:10px;}
+p{color:#bbb; font-size:15px;}
+
+.line-btn{
+  display:block;
+  margin-top:25px;
+  background:linear-gradient(135deg,#00ff88,#00cc66);
+  color:#000;
+  padding:16px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:18px;
+  box-shadow:0 10px 30px rgba(0,255,136,.5);
+}
+
+.note{
+  margin-top:20px;
+  font-size:13px;
+  color:#777;
+}
+</style>
 </head>
+
 <body>
-<div class="card">
-<nav class="menu">
-<a href="index.html">HOME</a>
-<a href="services.html">SERVICES</a>
-<a href="portfolio.html">PORTFOLIO</a>
-<a href="contact.html">CONTACT</a>
+
+<nav>
+  <a href="index.html">หน้าแรก</a>
+  <a href="services.html">บริการ</a>
+  <a href="portfolio.html">ผลงาน</a>
+  <a href="contact.html">ติดต่อ</a>
 </nav>
 
-<h2>ติดต่อเรา</h2>
-<p class="desc">
-พูดคุยรายละเอียดงาน<br>
-ปรึกษาฟรี ไม่มีค่าใช้จ่าย
-</p>
+<div class="container">
+  <h1>ติดต่อทำเว็บไซต์</h1>
+  <p>
+    ปรึกษาฟรี ไม่มีค่าใช้จ่าย  
+    <br>ออกแบบตามงบและความต้องการ
+  </p>
 
-<a class="btn" href="https://line.me/ti/p/XXXXXX">ติดต่อผ่าน LINE</a>
+  <!-- เปลี่ยน YOURLINEID -->
+  <a class="line-btn" href="https://line.me/ti/p/~mosnohp" target="_blank">
+    💬 ติดต่อผ่าน LINE
+  </a>
+
+  <div class="note">
+    ตอบไว • งานคุณภาพ • ดูแลหลังส่งงาน
+  </div>
 </div>
+
 </body>
 </html>
