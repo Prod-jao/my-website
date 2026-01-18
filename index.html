@@ -3,129 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>jaoprod • Digital Studio</title>
-
+<title>jaoprod digital studio</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #111 0%, #000 60%);
-  color: #eaeaea;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont;
+  background:#0b0b0b;
+  color:#fff;
 }
-
-.card {
-  width: 90%;
-  max-width: 360px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 24px;
-  padding: 36px 28px;
-  text-align: center;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 40px 80px rgba(0,0,0,0.8);
-  animation: float 6s ease-in-out infinite;
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
 }
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+nav a{
+  color:#aaa;
+  text-decoration:none;
+  font-weight:500;
 }
-
-.logo {
-  font-size: 36px;
-  letter-spacing: 2px;
-  font-weight: 600;
+nav a:hover{color:#00ff88;}
+.card{
+  max-width:360px;
+  margin:40px auto;
+  background:#111;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
-
-.logo span {
-  color: #777;
-  font-weight: 300;
-}
-
-.subtitle {
-  font-size: 12px;
-  letter-spacing: 4px;
-  color: #888;
-  margin-top: 6px;
-}
-
-.line {
-  width: 60px;
-  height: 2px;
-  margin: 20px auto;
-  background: linear-gradient(90deg, transparent, #00ff99, transparent);
-}
-
-h2 {
-  font-size: 22px;
-  margin: 16px 0;
-}
-
-.desc {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #bbb;
-}
-
-.price {
-  margin: 28px 0;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.btn {
-  display: block;
-  margin-top: 16px;
-  padding: 16px;
-  border-radius: 14px;
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  background: linear-gradient(135deg, #00ff99, #00cc66);
-  box-shadow: 0 0 25px rgba(0,255,153,0.7);
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(0,255,153,1);
-}
-
-.footer {
-  margin-top: 28px;
-  font-size: 11px;
-  color: #666;
+button{
+  margin-top:20px;
+  padding:15px;
+  width:100%;
+  border:none;
+  border-radius:14px;
+  background:#00ff88;
+  font-size:16px;
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+  <a href="index.html">หน้าแรก</a>
+  <a href="services.html">บริการ</a>
+  <a href="portfolio.html">ผลงาน</a>
+  <a href="contact.html">ติดต่อ</a>
+</nav>
+
 <div class="card">
-  <div class="logo">jao<span>prod</span></div>
-  <div class="subtitle">DIGITAL STUDIO</div>
-  <div class="line"></div>
-
-  <h2>รับออกแบบและพัฒนาเว็บไซต์</h2>
-
-  <p class="desc">
-    สำหรับธุรกิจออนไลน์ แบรนด์ และร้านค้า<br>
-    โครงสร้างมืออาชีพ โหลดเร็ว รองรับทุกอุปกรณ์
-  </p>
-
-  <div class="price">แพ็คเก็จเริ่มต้น 1,500 บาท</div>
-
-  <a class="btn" href="https://line.me/ti/p/mosnohp">
-    ปรึกษาฟรีทาง Line
-  </a>
-
-  <div class="footer">© jaoprod • Digital Studio</div>
+  <h1>jaoprod</h1>
+  <p>ออกแบบและพัฒนาเว็บไซต์  
+  สำหรับแบรนด์ที่ต้องการภาพลักษณ์พรีเมียม</p>
+  <p><b>เริ่มต้น 1,500 บาท</b></p>
+  <button>ติดต่อผ่าน LINE</button>
 </div>
 
 </body>
