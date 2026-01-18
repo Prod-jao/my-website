@@ -3,22 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio • jaoprod</title>
+<title>ผลงาน | jaoprod</title>
+
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont;
+  background:#0b0b0b;
+  color:#fff;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
+}
+nav a{
+  color:#aaa;
+  text-decoration:none;
+}
+nav a:hover{color:#00ff88;}
+
+.container{
+  max-width:380px;
+  margin:40px auto;
+  padding:20px;
+}
+.card{
+  background:#111;
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,.7);
+}
+.tag{
+  display:inline-block;
+  background:#00ff88;
+  color:#000;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:12px;
+  margin-bottom:10px;
+}
+</style>
 </head>
+
 <body>
-<div class="card">
-<nav class="menu">
-<a href="index.html">HOME</a>
-<a href="services.html">SERVICES</a>
-<a href="portfolio.html">PORTFOLIO</a>
-<a href="contact.html">CONTACT</a>
+
+<nav>
+  <a href="index.html">หน้าแรก</a>
+  <a href="services.html">บริการ</a>
+  <a href="portfolio.html">ผลงาน</a>
+  <a href="contact.html">ติดต่อ</a>
 </nav>
 
-<h2>ผลงานของเรา</h2>
-<p class="desc">
-ตัวอย่างงานออกแบบเว็บไซต์<br>
-อยู่ระหว่างอัปเดตผลงานเพิ่มเติม
-</p>
+<div class="container">
+  <h1>ผลงานของเรา</h1>
+
+  <div class="card">
+    <span class="tag">Landing Page</span>
+    <h3>ร้านค้าออนไลน์</h3>
+    <p>ออกแบบเว็บไซต์โทนดาร์ก รองรับมือถือ โหลดไว</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Business</span>
+    <h3>แบรนด์ส่วนตัว</h3>
+    <p>เว็บไซต์หลายหน้า สำหรับสร้างความน่าเชื่อถือ</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Studio</span>
+    <h3>Digital Studio</h3>
+    <p>ดีไซน์พรีเมียม เรียบ เท่ ใช้งานง่าย</p>
+  </div>
+
 </div>
+
 </body>
 </html>
